@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+body {
+  font-family: "Hanken Grotesk", sans-serif, Arial;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  color: white;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: hsl(225, 29%, 3%);
+  box-shadow: 8px 16px 48px hsla(224, 30%, 27%, 0.2);
+}
+
+h2 {
+  text-align: center;
+  font-size: 32px;
+}
+
+label {
+  font-weight: bold;
+}
+
+#surveyForm {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.form-field {
+  display: flex;
+  gap: 8px;
+}
+
+.form-fields {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+select,
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  outline: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: hsl(0, 0, 100%);
+}
+
+.form-fields input {
+  font-size: 14px;
+  outline: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.checkbox-label {
+  display: block;
+}
+
+.form-field-gender {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-field-gender .genders {
+  display: flex;
+  gap: 15px;
+}
+
+.buttons {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+button {
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+  font-weight: 700;
+  background: hsla(126, 95%, 49%, 0.78);
+  padding: 16px;
+  border: 0;
+  border-radius: 100vw;
+  cursor: pointer;
+}
+
+.buttons .submitbtn:hover {
+  background: rgb(9, 230, 42);
+}
+
+.buttons .reset:hover {
+  background-color: hsl(0, 83%, 37%);
+}
+
+button.reset {
+  background-color: rgb(237, 13, 13);
+}
+
+@media (max-width: 500px) {
+  body {
+    display: block;
+  }
+
+  .form-field {
+    flex-direction: column;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+}
